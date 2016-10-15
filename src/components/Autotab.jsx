@@ -50,7 +50,6 @@ Autotab.propTypes = {
     PropTypes.number,
   ]),
   maxLength: PropTypes.number,
-  label: PropTypes.string,
   style: PropTypes.object,
   autoFocus: PropTypes.bool,
 }
