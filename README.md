@@ -11,30 +11,50 @@ react-auto-tab is a module that easily lets you drop it into your existing proje
 
 `npm install --save react-input-auto-tab`
 
-`import Autotab from 'react-input-auto-tab'`
-
 ```
-<Autotab
-  type="text"
-  name="DD"
-  maxLength={8}
-  style={{ height: 30, paddingLeft: 10 }}
-  hint="Enter your day of birth"
-  onChange={this.handleChange}
-  autoFocus
-/>
+import React, { Component } from 'react';
+import Autotab from 'react-input-auto-tab';
+
+class InputField extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(response) {
+    console.log(response);
+  }
+
+  render() {
+    return (
+      <Autotab
+        type="text"
+        name="dayOfBirth"
+        maxLength={2}
+        hint="Enter your day of birth"
+        style={{ height: 24, paddingLeft: 10 }}
+        onChange={this.handleChange}
+        autoFocus
+      />
+    )
+  }
+}
+
+export default InputField;
 ```
 
 ### Properties
 | Name | Type | Default | Description |
 | ---- |:----:|:-----:|:-----|
 | type | string | text | Specifies the type of input to display such as "password" or "text"|
-| name* | string | | name given to the element |
-| value | string or number | | |
-| hint | string | | Input field placeholder |
-| maxLength | number | | for input value restriction and auto tabbing. The maxLength has to be set for the auto tabbing to work. |
+| name* | string | | Specifies the name of the component |
+| value | string or number | | Specifies the value of the component |
+| hint | string | | Specifies a short hint that describes the expected value of the component |
+| maxLength | number | | Specifies component value length restriction and auto tabbing. The maxLength has to be set for the auto tabbing to work else it will work like a normal HTML input field. |
 | onChange* | function | `() => {}` | callback function that is fired when component value changes |
 | style | object | | Override the inline-styles of the root element |
-| autoFocus | bool | false | input field autoFocus |
+| autoFocus | bool | false | Specifies that component should automatically get focus on render |
 
 *required properties

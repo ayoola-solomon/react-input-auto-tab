@@ -2,8 +2,8 @@ import React, { Component, PropTypes } from 'react';
 
 class Autotab extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.handleChange = this.handleChange.bind(this);
     this.handleTab = this.handleTab.bind(this);
