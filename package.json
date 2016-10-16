@@ -35,7 +35,7 @@
     "build:production": "cross-env NODE_ENV=production webpack src/Autotab.js dist/react-input-auto-tab.min.js",
     "build:publish": "npm run build:develop && npm run build:production",
     "test": "mocha test/.setup.js test/**/*-test.js --reporter spec",
-    "coverage": "cross-env NODE_ENV=test nyc npm test && nyc report --reporter=text-lcov | coveralls"
+    "coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text npm run test"
   },
   "repository": {
     "type": "git",
