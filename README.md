@@ -33,7 +33,7 @@ react-auto-tab is a module that easily lets you drop it into your existing proje
 | value | string or number | | |
 | hint | string | | Input field placeholder |
 | maxLength | number | | for input value restriction and auto tabbing. The maxLength has to be set for the auto tabbing to work. |
-| onChange* | function | `(value) => console.log(value)` | callback function that is fired when component value changes |
+| onChange* | function | `() => {}` | callback function that is fired when component value changes |
 | style | object | | Override the inline-styles of the root element |
 | autoFocus | bool | false | input field autoFocus |
 

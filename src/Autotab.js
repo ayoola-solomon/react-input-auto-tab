@@ -39,7 +39,7 @@ class Autotab extends Component {
         maxLength={this.props.maxLength}
         defaultValue={this.props.value}
         onChange={this.handleChange}
-        onKeyUp={this.handleTab}
+        onKeyUp={this.props.maxLength ? this.handleTab : null}
         style={this.props.style}
         autoFocus={this.props.autoFocus}
       />
