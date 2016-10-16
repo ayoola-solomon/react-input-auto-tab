@@ -1,6 +1,6 @@
 {
   "name": "react-input-auto-tab",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "React Input Field with Auto tabbing functionality component.",
   "main": "dist/react-input-auto-tab",
   "peerDependencies": {
