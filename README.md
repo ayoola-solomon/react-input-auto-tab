@@ -1,4 +1,4 @@
-# react-auto-tab
+# react-input-auto-tab
 
 > React Input Field with Auto tabbing functionality component.
 
@@ -9,9 +9,9 @@ react-auto-tab is a module that easily lets you drop it into your existing proje
 
 ## Usage
 
-`npm install --save react-google-login-component`
+`npm install --save react-input-auto-tab`
 
-`import Autotab from 'react-auto-tab'`
+`import Autotab from 'react-input-auto-tab'`
 
 ```
 <Autotab
