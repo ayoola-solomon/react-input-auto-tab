@@ -1,18 +1,46 @@
 {
-  "name": "react-auto-tab",
+  "name": "react-input-auto-tab",
   "version": "0.0.1",
-  "private": true,
-  "devDependencies": {
-    "react-scripts": "0.6.1"
+  "description": "React Input Field with Auto tabbing functionality component.",
+  "main": "dist/react-input-auto-tab",
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0"
   },
-  "dependencies": {
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "cross-env": "^3.1.3",
+    "eslint": "^3.8.0",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1",
+    "webpack": "^1.13.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "clear": "rm -rf dist && mkdir dist",
+    "build:develop": "cross-env NODE_ENV=development webpack src/Autotab.js dist/react-input-auto-tab.js",
+    "build:production": "cross-env NODE_ENV=production webpack src/Autotab.js dist/react-input-auto-tab.min.js",
+    "build:publish": "npm run build:develop && npm run build:production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayoola-solomon/react-auto-tab.git"
+  },
+  "keywords": [
+    "React",
+    "Component",
+    "Input",
+    "Tab"
+  ],
+  "author": "Solomon Ayoola <ayoola.solomon89@gmail.com> (https://branded.me/ayoola-solomon)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ayoola-solomon/react-auto-tab/issues"
+  },
+  "homepage": "https://github.com/ayoola-solomon/react-auto-tab#readme"
 }
