@@ -1,0 +1,11 @@
+language: node_js
+
+node_js:
+  - latest
+
+install:
+  - npm install
+
+script:
+  - npm run clear
+  - npm run build:publish
