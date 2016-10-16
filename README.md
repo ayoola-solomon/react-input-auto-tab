@@ -3,7 +3,7 @@
 > React Input Field with Auto tabbing functionality component.
 
 [![Build Status](https://travis-ci.org/ayoola-solomon/react-auto-tab.svg?branch=master)](https://travis-ci.org/ayoola-solomon/react-auto-tab)
-[![Coverage Status](https://coveralls.io/repos/github/ayoola-solomon/react-auto-tab/badge.svg?branch=master)](https://coveralls.io/github/ayoola-solomon/react-auto-tab?branch=master)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/ayoola-solomon/react-input-auto-tab/blob/master/LICENSE)
 
 react-auto-tab is a module that easily lets you drop it into your existing project and get the benefits of HTML input element with auto tabbing functionality. It's a plug and play component that'll fit in your workflow if your using standalone React or React with Redux.
 
