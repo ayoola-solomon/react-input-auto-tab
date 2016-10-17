@@ -11,7 +11,7 @@ react-input-auto-tab is a module that easily lets you drop it into your existing
 
 `npm install --save react-input-auto-tab`
 
-```
+```js
 import React, { Component } from 'react';
 import Autotab from 'react-input-auto-tab';
 
